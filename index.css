@@ -1,0 +1,553 @@
+.hero {
+    background-image: url('./components/background_image.jpg');
+}
+
+:root {
+    --small: 10px;
+}
+
+/* MAIN */
+
+main {
+    padding: 30px 40px;
+}
+
+.services {
+    background-color: rgba(0, 0, 0, 0.724);
+    display: flex;
+    flex-direction: row;
+    margin: 0 -40px;
+    padding: 40px 0px;
+}
+
+.services * {
+    color: white;
+}
+
+.core {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-size: 2rem;
+    font-weight: bold;
+    border-right: 1px solid white;
+    gap: 20px;
+    padding: 40px 30px;
+}
+
+.icon2 {
+    font-size: 20px;
+}
+
+.core1 {
+    text-transform: uppercase;
+}
+
+.core2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+    padding: 40px 30px;
+    padding-left: 40px;   
+    padding-right: 40px;     
+    font-size: large;
+    overflow: hidden;
+}
+
+.core2 strong {
+    font-size: larger;
+}
+
+/* --- SLIDER CORE LAYOUT --- */
+
+/* Put the 3 cards side-by-side */
+.services-track {
+    display: flex;
+    width: 100%;
+    transition: transform 0.4s ease;
+}
+
+/* Each card fills the entire right panel */
+.service-card {
+    min-width: 100%;
+    padding-right: 50px;
+}
+
+
+/* --- ARROW BUTTON STYLING (keeps your dark theme) --- */
+
+.slider-arrows {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.arrow-btn {
+    border: 1px solid white;
+    border-radius: 100%;
+    background: transparent;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    margin: 0 10px;
+}
+
+.arrow-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+/* HOW IT WORKS */
+
+.section {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.how-section {
+  text-align: center;
+  background: #f2f6fb;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: black;
+}
+
+.works-box, .quote {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+#container-features {
+    display: flex;
+    flex-direction: column;   
+    width: 80%; 
+}
+
+.works-box {
+    background-image: url('./components/works.jpg');
+    border-radius: 15px;
+    padding: 10px 30px;
+}
+
+.works1 h2, .quote1 h2 {
+    color: rgba(0, 0, 0, 0.864);
+}
+
+.quote {
+    background-image: url('./components/quote.jpg');
+    border-radius: 15px;
+    padding: 10px 30px;
+}
+
+.works-box  .works1, .quote .quote1 {
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.how-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+}
+
+.how-card {
+  width: 250px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.how-number {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #003366;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Features / How it works */
+.features {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+  align-items:center;
+}
+
+.feature-list {
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.feature {
+  background:rgba(255, 255, 255, 0.9);
+  padding:16px;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(10,30,50,.04);
+}
+
+/* Tracking & Quote forms */
+.forms {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+form {
+  background:rgba(255, 255, 255, 0.9);
+  padding:18px;
+  border-radius:12px;
+  box-shadow:0 8px 28px rgba(10,30,50,.04);
+}
+
+label {
+  display:block;
+  font-size:.9rem;
+  margin-bottom:6px;
+  color: black;
+}
+
+input,
+select,
+textarea {
+  width:100%;
+  padding:10px;
+  border:1px solid #e6eef1;
+  border-radius:8px;
+  margin-bottom:12px;
+  font-size:0.98rem;
+}
+
+.btn {
+  display:inline-block;
+  background:var(--teal);
+  background-color: rgba(0, 0, 0, 0.724);
+  color: white;
+  padding:10px 14px;
+  border-radius:10px;
+  border:none;
+  cursor:pointer;
+  font-weight:700;
+  width: 100%;
+}
+
+
+.choice {
+    margin-top: 15px;
+}
+
+.choice > div {
+    font-size: 2.8rem;
+    color: black;
+    font-weight: bold;
+}
+
+.cards {
+    /* background-color: black; */
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.cards * {
+    font-family: "Candara";
+    text-align: center;
+}
+
+.card-container {
+    margin-top: 40px;
+    background: whitesmoke;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card-container div {
+    background-color: whitesmoke;
+    border-radius: 100%;
+    width: 30%;
+    margin: -60px auto 5px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card-container img {
+    border-radius: 100%;
+    display: block;
+    width: 100%;
+    padding: 15px;
+}
+
+.card-container .top {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.card-container .content {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: rgba(0, 0, 0, 0.724);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+
+.footer-holder {
+    width: 25%;
+    margin: -25px -10px;
+}
+
+.footer-holder img {
+    display: block;
+    width: 100%;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 25px;
+    justify-content: space-between;
+}
+
+.home * {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Candara";
+    font-weight: bold;
+}
+
+.home nav {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.home nav p {
+    font-size: 20px;
+}
+
+.home nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 15pz;
+    gap: 7px;
+}
+
+.end {
+    text-align: center;
+    border-top: 1px solid white;
+    padding: 5px 0;
+    font-family: "Candara";
+    color: white;
+    font-weight: 500;
+}
+
+
+/* ================================
+   MOBILE & TABLET RESPONSIVENESS
+   ================================ */
+
+/* ----------- TABLETS (max 900px) ---------- */
+@media (max-width: 900px) {
+
+    /* HERO TEXT */
+    .motto h1 {
+        font-size: 1.9rem;
+        padding: 0 10px;
+    }
+
+    .motto h3 {
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: 0 15px;
+        font-weight: normal;
+    }
+
+    /* NAV WRAPS NICELY */
+    .list ul {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    /* SERVICES: FROM SIDE-BY-SIDE → STACKED */
+    .services {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .core, .core2 {
+        width: 100%;
+        border-right: none;
+        padding: 20px;
+    }
+
+    /* HOW IT WORKS GRID */
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .forms {
+        grid-template-columns: 1fr;
+    }
+    
+    #container-features {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* CARDS (Why Choose Us) */
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    /* FOOTER */
+    footer .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    
+    .footer-holder {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+
+/* ----------- MOBILE (max 600px) ---------- */
+@media (max-width: 600px) {
+    
+    /* HERO */
+    .motto h1 {
+        font-size: 40px;
+    }
+    
+    .motto h3 {
+        font-size: 0.95rem;
+    }
+    
+    /* NAV */
+    .list ul {
+        font-size: 13px;
+        gap: 8px;
+    }
+    
+    /* SLIDER */
+    .service-card {
+        min-width: 100%;
+    }
+    
+    .arrow-btn {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
+    .works-box, .quote {
+        flex-direction: column;
+        gap: 0;
+        padding: 9px 15px;
+    }
+
+    .quote {
+        flex-direction: column-reverse;
+    }
+    
+    #container-features {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards * {
+        background-color: white;
+        box-shadow: none;
+    }
+
+    .choice > div {
+        font-size: 35px;
+    }
+
+    /* FORMS */
+    form {
+        padding: 14px;
+    }
+
+    input, select, textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    /* CARDS */
+    .card-container {
+        padding: 15px 8px;
+        margin-top: 60px;
+    }
+
+    .card-container div {
+        margin-top: -50px;
+    }
+
+    .card-container .top {
+        font-size: 22px;
+    }
+
+    .card-container .content {
+        font-size: 16px;
+    }
+
+    /* FOOTER */
+    .footer-holder {
+        width: 50%;
+    }
+
+    .end {
+        font-size: 12px;
+    }
+
+
+    /* GLOBAL */
+    body, html {
+        overflow-x: hidden;
+    }
+
+    h2 {
+        font-size: 10px;
+    }
+}

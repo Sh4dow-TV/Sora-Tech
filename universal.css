@@ -1,0 +1,357 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Candara";
+}
+
+:root {
+    --darkgrey: rgba(0, 0, 0, 0.724);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+/* HEADER */
+
+.hero {
+    top: 0;
+    z-index: 1;
+    background-color: rgb(0, 89, 255);
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.container {
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 2px;
+}
+
+.motto {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    padding: 120px 50px;
+}
+
+.motto h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.motto h3 {
+    color: white;
+}
+
+.motto div {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.motto div .a1 {
+    background-color: white;
+    color: black;
+}
+
+.motto a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 7px 12px;
+    margin: 15px 0px 0px 0px;
+    font-size: 17px;
+}
+
+.icon-container > a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    width: 25%;
+    margin: -25px -10px;
+}
+
+.icon-container > a > img {
+    display: block;
+    width: 100%;
+}
+
+.list ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    white-space: nowrap;
+}
+
+.list a {
+    text-decoration: none;
+    color: white; 
+    font-family: "Candara";
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+    font-weight: 500;
+}
+
+.list a.active {
+    font-weight: 900;
+}
+
+.list a:hover {
+    font-weight: bold;
+}
+
+.list a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px; 
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.list a:hover::after {
+    width: 100%;
+}
+
+/* MAIN */
+
+main {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#shadow {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: black; 
+    text-shadow: 0 2px 6px rgba(0,0,0,0.25);    
+}
+
+strong {
+    text-shadow: 0 2px 6px rgba(0,0,0,0.25);    
+}
+
+/* FOOTER */
+
+footer{
+    background-color: var(--darkgrey);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+
+.footer-holder {
+    width: 25%;
+    margin: -25px -10px;
+}
+
+.footer-holder img {
+    display: block;
+    width: 100%;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 25px;
+    justify-content: space-between;
+}
+
+.home * {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Candara";
+    font-weight: bold;
+}
+
+.home nav {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.home nav p {
+    font-size: 20px;
+}
+
+.home nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 15pz;
+    gap: 7px;
+}
+
+.end {
+    text-align: center;
+    border-top: 1px solid white;
+    padding: 5px 0;
+    font-family: "Candara";
+    color: white;
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+
+    /* Fix nav overflow */
+    .list ul {
+        flex-wrap: wrap;
+        white-space: normal;
+        gap: 20px;
+        margin: 10px 0;
+        justify-content: center;
+        padding: 0;
+    }
+
+    /* Reduce list font size so it fits better */
+    .list ul li a {
+        font-size: 14px;
+    }
+
+    /* Prevent hero text from causing overflow */
+    .motto h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    .motto h3 {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    /* Ensure layout never extends past screen */
+    html, body {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .icon-container > a {
+        margin: -25px 0;
+        width: 50%;
+    }
+
+    main {
+        background-color: white;
+    }
+
+    footer .home {
+        gap: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-holder {
+        margin: 0;
+        display: none;
+    }
+
+    .motto {
+        padding: 30px 20px;
+    }
+}
+
+        /* MOBILE MENU FIX */
+        .mobile-menu-btn {
+            display: none;
+            font-size: 28px;
+            color: white;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+
+        /* Slide-out menu */
+        .mobile-sidebar {
+            position: fixed;
+            top: 0;
+            right: -260px;
+            width: 260px;
+            height: 100%;
+            background: white;
+            z-index: 9999;
+            padding: 40px 20px;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, .2);
+            transition: right .3s ease;
+        }
+
+        .mobile-sidebar.active {
+            right: 0;
+        }
+
+        .mobile-sidebar a {
+            display: block;
+            margin-bottom: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+
+        .mobile-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 32px;
+            cursor: pointer;
+        }
+
+        /* Overlay behind menu */
+        .menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .3);
+            z-index: 9998;
+            display: none;
+        }
+
+        .menu-overlay.active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .list {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .icon-container {
+                width: 70%;
+            }
+        }
+

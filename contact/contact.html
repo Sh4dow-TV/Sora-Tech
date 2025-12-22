@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sora Tech | Contact Us</title>
+
+    <link rel="stylesheet" href="../universal.css" />
+    <link rel="stylesheet" href="contact.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../favicon-96x96.png" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+
+    <!-- AOS Animations -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body>
+
+	<!-- SLIDE-OUT MENU -->
+	<div class="mobile-sidebar" id="mobileSidebar">
+		<div class="mobile-close" id="closeMenu">&times;</div>
+
+        <a href="../index.html">HOME</a>
+        <a href="../about/about.html">ABOUT US</a>
+        <a href="../services/services.html">OUR SERVICES</a>
+        <a href="./contact.html">CONTACT US</a>
+        
+	</div>
+
+	<div class="menu-overlay" id="menuOverlay"></div>
+
+	<!-- HERO -->
+	<header class="hero">
+		<section class="container" data-aos="fade-down">
+
+			<!-- Logo -->
+			<section class="icon-container">
+				<a href="../index.html">
+					<img class="icon" src="../icon.png" />
+				</a>
+			</section>
+
+			<!-- Desktop Navigation -->
+			<section class="list">
+				<nav>
+					<ul>
+						<li><a href="../index.html">HOME</a></li>
+						<li><a href="../about/about.html">ABOUT US</a></li>
+						<li><a href="../services/services.html">OUR SERVICES</a></li>
+						<li><a href="contact.html" class="active">CONTACT US</a></li>
+                        
+					</ul>
+				</nav>
+			</section>
+
+			<!-- Mobile Menu Button -->
+			<div class="mobile-menu-btn" id="openMenu">&#9776;</div>
+		</section>
+
+		<section class="motto" data-aos="fade-up">
+            <h1>Let’s Connect</h1>
+            <h3>Questions? Need support? Want to ship something today?<br>
+            We’re here to help—fast, friendly and always available.</h3>
+		</section>
+	</header>
+
+
+    <!-- CONTACT CONTENT -->
+    <main>
+        <section class="contact-wrapper" data-aos="fade-up">
+            <div class="contact-container">
+
+                <!-- LEFT: INFO -->
+                <div class="contact-info" style="box-shadow: 0 6px 20px rgba(10, 30, 50, 0.08);">
+                    <div class="info-item">
+                        <strong>Email</strong>
+                        <a href="mailto:soratechlogistic@gmail.com"
+                            onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=soratechlogistic@gmail.com', '_blank');">
+                            soratechlogistic@gmail.com
+                        </a>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>WhatsApp</strong>
+                        <div class="whatsapp-group">
+                            <a href="https://wa.me/2347060718364" target="_blank">+234 706 071 8364</a>
+                            <a href="https://wa.me/447538067749" target="_blank">+44 7538 067 749</a>
+                            <a href="https://wa.me/447438955421" target="_blank">+44 7438 955 421</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Service Hours</strong>
+                        Monday – Saturday<br>
+                        8:00am – 6:00pm
+                    </div>
+                </div>
+
+                <!-- RIGHT: FORM -->
+                <form
+                    id="contactForm"
+                    action="https://formspree.io/f/mnjaaqwb"
+                    method="POST"
+                >
+
+                    <label>Your Name</label>
+                    <input type="text" name="name" required placeholder="Enter your name">
+
+                    <label>Your Email</label>
+                    <input type="email" name="email" required placeholder="Enter your email">
+
+                    <label>Your Message</label>
+                    <textarea name="message" required placeholder="Write your message..."></textarea>
+
+                    <!-- OPTIONAL: subject line in your Gmail -->
+                    <input type="hidden" name="_subject" value="New message from Sora Tech website">
+
+                    <button type="submit" class="btn-submit">Send Message</button>
+
+                    <p id="successMsg" class="success-msg" style="display:none;">
+                        Your message has been sent ✔
+                    </p>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer data-aos="fade-up">
+        <section>
+            <div class="home">
+
+                <div class="footer-holder">
+                    <img src="../icon.png" alt="Footer" />
+                </div>
+
+                <nav>
+                    <p>Navigation</p>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about/about.html">About Us</a></li>
+                        <li><a href="../services/services.html">Our Services</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                        
+                    </ul>
+                </nav>
+
+                <nav>
+                    <p>Our Services</p>
+                    <ul>
+                        <li>Freight Transport</li>
+                        <li>Road Logistics</li>
+                        <li>Door-to-Door Nigeria ↔ UK</li>
+                        <li>Local Delivery</li>
+                        <li>International Cargo</li>
+                    </ul>
+                </nav>
+
+                <nav>
+                    <p>Contact Us</p>
+                    <ul>
+                        <li><a href="https://wa.me/2347060718364" target="_blank">+234 706 071 8364</a></li>
+                        <li><a href="https://wa.me/447538067749" target="_blank">+44 7538 067 749</a></li>
+                        <li><a href="https://wa.me/447438955421" target="_blank">+44 7438 955 421</a></li>
+                    </ul>
+                </nav>
+                                        
+            </div>
+
+            <div class="end">
+                All rights reserved &copy; Sora Tech Logistics Ltd. | Privacy Policy | Terms and Conditions
+            </div>
+        </section>
+    </footer>
+
+    <!-- JS for Mobile Menu -->
+    <script>
+        const openMenu = document.getElementById("openMenu");
+        const closeMenu = document.getElementById("closeMenu");
+        const sidebar = document.getElementById("mobileSidebar");
+        const overlay = document.getElementById("menuOverlay");
+
+        openMenu.addEventListener("click", () => {
+            sidebar.classList.add("active");
+            overlay.classList.add("active");
+        });
+
+        closeMenu.addEventListener("click", () => {
+            sidebar.classList.remove("active");
+            overlay.classList.remove("active");
+        });
+
+        overlay.addEventListener("click", () => {
+            sidebar.classList.remove("active");
+            overlay.classList.remove("active");
+        });
+    </script>
+
+    <script>
+    const form = document.getElementById("contactForm");
+    const successMsg = document.getElementById("successMsg");
+
+    form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            form.reset();
+            successMsg.style.display = "block";
+        } else {
+            alert("Something went wrong. Please try again.");
+        }
+    });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init({ duration: 700, once: true })</script>
+
+</body>
+</html>

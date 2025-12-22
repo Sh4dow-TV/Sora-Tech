@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sora Tech</title>
+
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./universal.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon-96x96.png" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <!-- AOS Animations -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body>
+
+    <!-- SLIDE-OUT MENU -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="mobile-close" id="closeMenu">&times;</div>
+
+        <a href="./index.html">HOME</a>
+        <a href="./about/about.html">ABOUT US</a>
+        <a href="./services/services.html">OUR SERVICES</a>
+        <a href="./contact/contact.html">CONTACT US</a>
+    </div>
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- HERO -->
+    <header class="hero">
+        <section class="container" data-aos="fade-down">
+            <!-- Logo -->
+            <section class="icon-container">
+                <a href="./index.html">
+                    <img class="icon" src="./icon.png" />
+                </a>
+            </section>
+
+            <!-- Desktop Navigation -->
+            <section class="list">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html" class="active">HOME</a></li>
+                        <li><a href="./about/about.html">ABOUT US</a></li>
+                        <li><a href="./services/services.html">OUR SERVICES</a></li>
+                        <li><a href="./contact/contact.html">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <!-- Mobile Menu Button -->
+            <div class="mobile-menu-btn" id="openMenu">&#9776;</div>
+        </section>
+
+        <section class="motto" data-aos="fade-up">
+            <h1>MOVING YOU FORWARD - ONE GOOD AT A TIME</h1>
+            <h3>At Sora Tech Logistics Ltd we move goods — and dreams. From local pickups in Lagos and Delta
+                to international freight, our air, sea and road services are designed for speed, safety and affordability.</h3>
+
+            <div data-aos="zoom-in" data-aos-delay="200" >
+                <a href="#quote" class="a1" style="margin-left: 20px;">Get a Quote</a>
+                <a href="#services" class="a2">Our Services</a>
+            </div>
+        </section>
+    </header>
+
+	<main>
+		<!-- SERVICES -->
+			<section class="services" id="services" data-aos="fade-up">
+				<section class="core" data-aos="fade-right">
+					<div class="icon2">Sora Tech</div>
+					<div class="core1">Our<br/> Services</div>
+				</section>
+
+				<section class="core2">
+					<div class="services-track">
+
+						<!-- SEA -->
+						<div class="service-card" data-aos="fade-right">
+							<strong>Sea Freight Forwarding</strong>
+							<p>Reliable, cost-effective shipping for bulk and containerized goods across international waters. We handle documentation, customs clearance, consolidation, and door-to-door delivery — ensuring your cargo arrives safely and on schedule.</p>
+							<p><strong>Ideal for:</strong> Large volumes, non-urgent deliveries, imports/exports.</p>
+						</div>
+
+						<!-- AIR -->
+						<div class="service-card" data-aos="fade-up">
+							<strong>Air Freight Forwarding</strong>
+							<p>Fast and secure delivery for urgent or high-value shipments. Our air freight service gives you priority handling, real-time tracking, and quick delivery windows between Nigeria, the UK, and global destinations.</p>
+							<p><strong>Ideal for:</strong> Time-sensitive parcels, high-value goods, perishables.</p>
+						</div>
+
+						<!-- ROAD -->
+						<div class="service-card" data-aos="fade-left">
+							<strong>Road Freight Forwarding</strong>
+							<p>Flexible, efficient transport for domestic and cross-border deliveries. We provide door-to-door trucking, route optimization, and safe handling from pickup to drop-off — perfect for packages, pallets, and commercial goods.</p>
+							<p><strong>Ideal for:</strong> Local distribution, same-country deliveries, short-haul cargo.</p>
+						</div>
+
+						<div class="service-card" data-aos="fade-right">
+							<strong>Door-to-Door Shipping (Nigeria ↔ UK)</strong>
+							<p>End-to-end service including pickup, customs clearance, and delivery to the recipient’s door — tailored for diaspora customers and small businesses.</p>
+							<p><strong>Ideal for:</strong> Personal shipments, small businesses, cross-border deliveries.</p>
+						</div>
+
+						<div class="service-card" data-aos="fade-up">
+							<strong>Pickup Booking</strong>
+							<p>Schedule free pickups in Lagos & Delta State. Choose your preferred date, time, and service type — we’ll handle the rest for a smooth shipping experience.</p>
+							<p><strong>Ideal for:</strong> Local pickups, convenient scheduling, hassle-free shipping.</p>
+						</div>
+
+						<div class="service-card" data-aos="fade-left">
+							<strong>Customs & Documentation Support</strong>
+							<p>Expert clearance assistance to reduce delays and avoid fees. We manage paperwork for both Nigeria and international partners, ensuring smooth customs processing.</p>
+							<p><strong>Ideal for:</strong> International shipments, first-time shippers, customs compliance.</p>
+						</div>
+					</div>
+
+					<div class="slider-arrows" data-aos="zoom-in">
+						<button id="prevBtn" class="arrow-btn"><</button>
+						<button id="nextBtn" class="arrow-btn">></button>
+					</div>
+				</section>
+			</section>
+
+
+			<!-- HOW IT WORKS -->
+			<section class="section">
+				<div class="container features" id="container-features">
+					<section class="works-box">
+						<div class="works1"><h2 class="section-title" data-aos="fade-up">How It Works</h2></div>
+						<div class="works">
+							<div class="feature-list">
+								<div class="feature" data-aos="fade-up" data-aos-delay="100">
+									<strong>1. Get a Quote</strong>
+									<div class="muted">Tell us what you’re shipping — weight, size and origin/destination.</div>
+								</div>
+
+								<div class="feature" data-aos="fade-up" data-aos-delay="200">
+									<strong>2. Book Pickup</strong>
+									<div class="muted">Choose a pickup window in Lagos or Delta — or drop off at our hub.</div>
+								</div>
+
+								<div class="feature" data-aos="fade-up" data-aos-delay="300">
+									<strong>3. Track in Real Time</strong>
+									<div class="muted">Use your tracking number for live updates from pickup to delivery.</div>
+								</div>
+
+								<div class="feature" data-aos="fade-up" data-aos-delay="400">
+									<strong>4. Delivery & Support</strong>
+									<div class="muted">We confirm delivery and handle any follow-up support or claims.</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- QUOTE FORM -->
+					 <section class="quote">
+						 <div id="quote" data-aos="zoom-in">
+							 <form id="quoteForm" onsubmit="return false">
+								 <label>From (City, Country)</label>
+								 <input id="qFrom" placeholder="Lagos, Nigeria" />
+	 
+								 <label>To (City, Country)</label>
+								 <input id="qTo" placeholder="London, UK" />
+	 
+								 <label>Weight (kg)</label>
+								 <input id="qWeight" type="number" min="0" placeholder="e.g. 12" />
+	 
+								 <label>Service</label>
+								 <select id="qService">
+									 <option>Air Freight</option>
+									 <option>Sea Freight</option>
+									 <option>Road Freight</option>
+									 <option>Door-to-Door</option>
+								 </select>
+	 
+								 <button class="btn" onclick="fakeQuote()">Get Estimate</button>
+								 <div id="quoteResult" style="margin-top:12px"></div>
+							 </form>
+						 </div>
+						<div class="quote1"><h2 class="section-title">Quick Quote & Booking</h2></div>
+					 </section>
+				</div>
+			</section>
+			
+			<!-- WHY CHOOSE US -->
+			<section class="choice">
+				<div data-aos="fade-up">Why Choose Us ?</div>
+				<section class="cards">
+
+					<div class="card-container" data-aos="zoom-in">
+						<div><img src="./components/choice/global.png" alt="Global Coverage"></div>
+						<p class="top">Global Coverage</p>
+						<p class="content">Delivering across continents with a reliable international network.</p>
+					</div>
+
+					<div class="card-container" data-aos="zoom-in" data-aos-delay="100">
+						<div><img src="./components/choice/inventory.png" alt="Secure Handling"></div>
+						<p class="top">Secure Handling</p>
+						<p class="content">Every package is protected with industry-standard safety protocols.</p>
+					</div>
+
+					<div class="card-container" data-aos="zoom-in" data-aos-delay="200">
+						<div><img src="./components/choice/delivery.png" alt="Fast Delivery"></div>
+						<p class="top">Fast Delivery</p>
+						<p class="content">Optimized routes and efficient operations for quicker arrivals.</p>
+					</div>
+
+					<div class="card-container" data-aos="zoom-in" data-aos-delay="300">
+						<div><img src="./components/choice/support.png" alt="Customer Support"></div>
+						<p class="top">24/7 Customer Support</p>
+						<p class="content">Get assistance anytime from our dedicated support team.</p>
+					</div>
+
+					<div class="card-container" data-aos="zoom-in" data-aos-delay="400">
+						<div><img src="./components/choice/storing.png" alt="Warehousing"></div>
+						<p class="top">Warehouse & Storage</p>
+						<p class="content">Secure long-term and short-term storage facilities.</p>
+					</div>
+
+					<div class="card-container" data-aos="zoom-in" data-aos-delay="500">
+						<div><img src="./components/choice/customs.png" alt="Customs Clearance"></div>
+						<p class="top">Customs Clearance</p>
+						<p class="content">Smooth cross-border movement with expert documentation support.</p>
+					</div>
+
+					<div class="card-container" data-aos="zoom-in" data-aos-delay="600">
+						<div><img src="./components/choice/freight.png" alt="Dedicated Fleet"></div>
+						<p class="top">Dedicated Fleet</p>
+						<p class="content">Modern vehicles equipped for a wide range of cargo types.</p>
+					</div>
+
+					<div class="card-container" data-aos="zoom-in" data-aos-delay="700">
+						<div><img src="./components/choice/cost.png" alt="Cost-Effective"></div>
+						<p class="top">Cost-Effective Solutions</p>
+						<p class="content">Affordable and transparent pricing tailored to your needs.</p>
+					</div>
+
+					<div class="card-container" data-aos="zoom-in" data-aos-delay="800">
+						<div><img src="./components/choice/accurate.png" alt="Last-Mile Delivery"></div>
+						<p class="top">Last-Mile Delivery</p>
+						<p class="content">Fast and accurate delivery to the final destination.</p>
+					</div>
+
+				</section>
+			</section>
+
+
+	</main>
+
+	<!-- FOOTER -->
+	<footer data-aos="fade-up">
+		<section>
+			<div class="home">
+
+				<div class="footer-holder">
+					<img src="icon.png" alt="Footer" />
+				</div>
+
+				<nav>
+					<p>Navigation</p>
+					<ul>
+						<li><a href="./index.html">Home</a></li>
+						<li><a href="./about/about.html">About Us</a></li>
+						<li><a href="./services/services.html">Our Services</a></li>
+						<li><a href="./contact/contact.html">Contact Us</a></li>
+                        
+					</ul>
+				</nav>
+
+				<nav>
+					<p>Our Services</p>
+					<ul>
+						<li>Freight Transport</li>
+						<li>Road Logistics</li>
+						<li>Door-to-Door Nigeria ↔ UK</li>
+						<li>Local Delivery</li>
+						<li>International Cargo</li>
+					</ul>
+				</nav>
+
+				<nav>
+					<p>Contact Us</p>
+					<ul>
+						<li><a href="https://wa.me/2347060718364" target="_blank">+234 706 071 8364</a></li>
+						<li><a href="https://wa.me/447538067749" target="_blank">+44 7538 067 749</a></li>
+						<li><a href="https://wa.me/447438955421" target="_blank">+44 7438 955 421</a></li>
+					</ul>
+				</nav>
+
+			</div>
+
+			<div class="end">
+				All rights reserved &copy; Sora Tech Logistics Ltd. | Privacy Policy | Terms and Conditions
+			</div>
+		</section>
+	</footer>
+
+	<script src="script.js"></script>
+	<!-- AOS Script -->
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 500,
+			easing: "ease-out",
+			once: true
+		});
+	</script>
+
+	<script>
+		document.querySelector('a[href="#quote"]').addEventListener("click", function (e) {
+			e.preventDefault();
+			document.getElementById("quote").scrollIntoView({
+				behavior: "smooth",
+				block: "start"
+			});
+		});
+
+		document.querySelector('a[href="#services"]').addEventListener("click", function (e) {
+			e.preventDefault();
+			document.getElementById("services").scrollIntoView({
+				behavior: "smooth",
+				block: "start"
+			});
+		});
+
+		let index = 0;
+
+		const track = document.querySelector(".services-track");
+		const cards = document.querySelectorAll(".service-card");
+
+		function updateSlider() {
+			track.style.transform = `translateX(-${index * 100}%)`;
+		}
+
+		document.getElementById("nextBtn").addEventListener("click", () => {
+			index = (index + 1) % cards.length;
+			updateSlider();
+		});
+
+		document.getElementById("prevBtn").addEventListener("click", () => {
+			index = (index - 1 + cards.length) % cards.length;
+			updateSlider();
+		});
+
+		function fakeTrack(){
+			const val = document.getElementById('trackInput').value.trim();
+			const res = document.getElementById('trackResult');
+			if(!val){res.innerText='Enter a tracking number';return}
+			res.innerText = 'Status: In Transit — Expected delivery: 3 days';
+		}
+
+		function fakeQuote(){
+			const from = document.getElementById('qFrom').value || 'Lagos, Nigeria';
+			const to = document.getElementById('qTo').value || 'London, UK';
+			const w = parseFloat(document.getElementById('qWeight').value) || 5;
+			const service = document.getElementById('qService').value;
+
+			let base = 4; 
+			if (service.includes('Air')) {
+				base = 8;
+			} else if (service.includes('Sea')) {
+				base = 2.5;
+			}
+
+			// NGN calculation (your original)
+			let priceNGN = Math.round(base * w * 10);
+
+			
+			const rate = 1800; 
+			let priceGBP = (priceNGN / rate).toFixed(2);
+
+			document.getElementById('quoteResult').innerHTML = `
+				<div style="padding: 10px; background: #eef8f3; border-radius: 8px">
+					<strong>Estimated Cost:</strong><br>
+					₦${priceNGN.toLocaleString()}  
+					<br>
+					£${priceGBP}
+					<div class="muted">(estimate only)</div>
+				</div>
+			`;
+		}
+		
+		let tIndex = 0;
+		const testimonials = document.querySelectorAll('.testimonial');
+		function showTest(i){
+			testimonials.forEach((t,idx)=>{t.style.display = idx===i? 'block':'none'});
+		}
+		function nextTestimonial(){ tIndex = (tIndex+1)%testimonials.length; showTest(tIndex); }
+		function prevTestimonial(){ tIndex = (tIndex-1+testimonials.length)%testimonials.length; showTest(tIndex); }
+
+		function toggleFaq(el){
+			const answer = el.querySelector('.faq-answer');
+			if(!answer) return;
+			if(answer.style.maxHeight && answer.style.maxHeight!=='0px'){
+				answer.style.maxHeight = '0';
+			} else {
+				answer.style.maxHeight = (answer.scrollHeight+20)+ 'px';
+			}
+		}
+
+		document.getElementById('year').innerText = new Date().getFullYear();
+
+		showTest(0);
+	</script>
+    <script>
+        const openMenu = document.getElementById("openMenu");
+        const closeMenu = document.getElementById("closeMenu");
+        const sidebar = document.getElementById("mobileSidebar");
+        const overlay = document.getElementById("menuOverlay");
+
+        // Open
+        openMenu.addEventListener("click", () => {
+            sidebar.classList.add("active");
+            overlay.classList.add("active");
+        });
+
+        // Close
+        closeMenu.addEventListener("click", () => {
+            sidebar.classList.remove("active");
+            overlay.classList.remove("active");
+        });
+
+        // Close when clicking background
+        overlay.addEventListener("click", () => {
+            sidebar.classList.remove("active");
+            overlay.classList.remove("active");
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll(".mobile-sidebar a").forEach(link => {
+            link.addEventListener("click", () => {
+                sidebar.classList.remove("active");
+                overlay.classList.remove("active");
+            });
+        });
+    </script>
+
+    <!-- AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init({ duration: 600, once: true })</script>
+
+</body>
+</html>

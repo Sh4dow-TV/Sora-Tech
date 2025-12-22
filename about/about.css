@@ -1,0 +1,251 @@
+.hero {
+    background-image: url('../components/background.jpg');    
+}
+
+/* MAIN */
+
+main {
+    padding: 30px 20px;
+}
+
+#white {
+    background-color: white;
+    padding: 15px 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.story {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: black; 
+    text-shadow: 0 2px 6px rgba(0,0,0,0.25);    
+}
+
+.blockquote {
+    font-size: 1.5rem;
+    border-left: 3px solid #0073ff;
+    padding-left: 15px;
+    color: #0073ff;
+}
+
+strong {
+    color: black;
+    font-size: 20px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.column .column1, .column .column2 {
+    border-radius: 15px;
+}
+
+.column div,
+.column p {
+    font-size: large;
+    color: black;
+}
+
+#white.mission > section {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mission ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mission ul li {
+    width: 45%;
+}
+
+.column1 {
+    width: 60%;
+}
+
+.column2 {
+    width: 40%;
+}
+
+.flex1, .flex2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.flex1 strong, .flex2 strong {
+    font-size: large;
+    color: black;   
+}
+
+.flex1 div, .flex2 div {
+    width: 50%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#white.quote {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.do strong {
+    color: forestgreen;
+    width: 30%;
+}
+
+.do p {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.do span {
+    width: 70%;
+}
+
+.quote a {
+    display: block;
+    background-color: black;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 7px 10px;
+    width: fit-content;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+
+.contact ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact ul a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    color: #0a2e4d;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact ul a:hover {
+    font-weight: bold;
+}
+
+.contact ul div {
+    width: 5%;
+    margin-bottom: 2px;
+}
+
+.contact ul img {
+    display: block;
+    width: 100%;
+}
+
+/* ============= RESPONSIVE FIXES ============= */
+@media (max-width: 900px) {
+
+    /* Main column layout becomes vertical */
+    .column {
+        flex-direction: column;
+    }
+
+    .column1, .column2 {
+        width: 100%;
+    }
+
+    /* Mission section list becomes vertical */
+    .mission ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .mission ul li {
+        width: 100%;
+    }
+
+    /* Flex rows in Team section become vertical */
+    .flex1, .flex2 {
+        flex-direction: column;
+    }
+
+    .flex1 div, .flex2 div {
+        width: 100%;
+    }
+
+    /* What We Do section: stack each point vertically */
+    .do p {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .do strong, 
+    .do span {
+        width: 100%;
+    }
+
+    /* Contact icons: prevent overflow */
+    .contact ul div {
+        width: 30px;      /* fixed mobile-safe size */
+    }
+
+    .contact ul img {
+        width: 100%;
+    }
+
+    /* Prevent horizontal scroll */
+    html, body {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* Resize text for readability */
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .motto h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .motto h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Add spacing for mobile */
+    #white {
+        padding: 15px;
+    }
+}
